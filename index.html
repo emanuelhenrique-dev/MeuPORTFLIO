@@ -3,7 +3,433 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="/scripts/index.js" defer></script>
     <title>Meu portfolio</title>
   </head>
-  <body></body>
+  <body>
+    <div class="api">
+      <nav>
+        <div class="wrapper">
+          <div class="logo">
+            <img src="assets/front-logo.png" alt="Logo front end" />
+            <h2>EmanuelDev</h2>
+          </div>
+          <button
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            class="menu-btn"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="menu" role="menu">
+            <li>
+              <span>/</span><a href="#home">Início</a
+              ><span class="cursor">&nbsp;</span>
+            </li>
+            <li>
+              <span>/</span><a href="#about">Sobre mim</a
+              ><span class="cursor">&nbsp;</span>
+            </li>
+            <li>
+              <span>/</span><a href="#skills">Conhecimento</a
+              ><span class="cursor">&nbsp;</span>
+            </li>
+            <li>
+              <span>/</span><a href="#projects">Projetos</a
+              ><span class="cursor">&nbsp;</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="home">
+        <div class="wrapper">
+          <div class="textinitial">
+            <h1>Olá,</h1>
+            <div class="scroller">
+              <span>
+                Bem vindo<br />
+                Eu sou Emanuel Henrique
+              </span>
+            </div>
+            <div class="scroller2">
+              <span> Desenvolvedor Front-end<br /> </span>
+            </div>
+            <div class="buttons">
+              <a
+                href="https://www.linkedin.com/in/emanuel-henrique-ferreira-silva-5b4a1223a/"
+                target="_blank"
+              >
+                <img src="assets/linkedin-icon.svg" alt="meu linkedin" />
+                LinkedIn</a
+              >
+              <a href="https://github.com/emanuelhenrique-dev" target="_blank">
+                <img src="assets/github-icon.svg" alt="meu hithub" />
+                Github</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="about">
+        <div class="wrapper">
+          <div class="container_about">
+            <h2><img src="assets/Hash.png" alt="" /> SOBRE MIM</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              id egestas dui. Nullam finibus aliquam enim quis faucibus. Aenean
+              ac commodo dolor, nec bibendum velit. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Praesent id egestas dui. Nullam
+              finibus aliquam enim quis faucibus. Aenean ac commodo dolor, nec
+              bibendum velit.
+            </p>
+            <a href="https://github.com/emanuelhenrique-dev" target="_blank">
+              Currículo<img
+                src="assets/DownloadSimple.png"
+                alt="download curriculum"
+            /></a>
+          </div>
+          <div class="profile">
+            <img src="assets/photo.png" alt="" />
+            <div class="social_links">
+              <a href="" target="">
+                <img src="assets/email-icon.png" alt=""
+              /></a>
+              <a href="https://www.instagram.com/emanuelhfs/" target="_blank">
+                <img src="assets/instragam-icon.png" alt=""
+              /></a>
+              <a href="https://github.com/emanuelhenrique-dev" target="_blank">
+                <img src="assets/github-icon2.png" alt=""
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/emanuel-henrique-ferreira-silva-5b4a1223a/"
+                target="_blank"
+              >
+                <img src="assets/linkedin-icon2.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="skills">
+        <div class="back">
+          <div class="wrapper">
+            <h2><img src="assets/Hash.png" alt="" />CONHECIMENTO</h2>
+            <ul class="list-skill">
+              <li>
+                <h3>Linguagens de programação</h3>
+                <div class="cards">
+                  <div>
+                    <img
+                      src="assets/skills-images/javascript.png"
+                      alt="javascript image"
+                    />
+                    <h4>Java script</h4>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <h3>Outras Linguagens</h3>
+                <div class="cards">
+                  <div>
+                    <img src="assets/skills-images/css.png" alt="css image" />
+                    <h4>CSS</h4>
+                  </div>
+                  <div>
+                    <img src="assets/skills-images/html.png" alt="Html image" />
+                    <h4>HTMl</h4>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <h3>Ferramentas</h3>
+                <div class="cards">
+                  <div>
+                    <img
+                      src="assets/skills-images/vscode.png"
+                      alt="vscode image"
+                    />
+                    <h4>VsCode</h4>
+                  </div>
+                  <div>
+                    <img
+                      src="assets/skills-images/figma.png"
+                      alt="figma image"
+                    />
+                    <h4>Figma</h4>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <h3>Frameworks</h3>
+                <div class="cards">
+                  <div>
+                    <h4>...Estudando</h4>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="projects">
+        <div class="wrapper">
+          <h2><img src="assets/Hash.png" alt="" />Projetos</h2>
+          <ul class="list-projects">
+            <li id="0" class="hidden">
+              <div class="card">
+                <div class="animated-card">
+                  <div class="tools-alt">
+                    <span style="background-color: #0277bd">CSS</span>
+                    <span style="background-color: #e14e1d">HTML</span>
+                    <span style="background-color: #d8c232">JS</span>
+                  </div>
+                  <img src="assets/projects-assets/project01-art.png" alt="" />
+                </div>
+                <div class="info">
+                  <div class="links">
+                    <a
+                      href="https://github.com/emanuelhenrique-dev/Blizzard_br-challenges"
+                      target="_blank"
+                    >
+                      Github
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.68152 3.66718L8.36902 8.35468L3.68152 13.0422"
+                          stroke="#FFEFEF"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8.36902 3.66718L13.0565 8.35468L8.36902 13.0422"
+                          stroke="#FFEFEF"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="http://blizzard-br-challenges-omega.vercel.app/"
+                      target="_blank"
+                    >
+                      Demo
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.68152 3.66718L8.36902 8.35468L3.68152 13.0422"
+                          stroke="#FFEFEF"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8.36902 3.66718L13.0565 8.35468L8.36902 13.0422"
+                          stroke="#FFEFEF"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="tools">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                    <span>Figma</span>
+                  </div>
+                </div>
+              </div>
+              <h3>Landing page Blizzard</h3>
+              <p>
+                Projeto feito para o desafio da BrChallenges de criar uma
+                landing page da blizzard na dificuldade difícil.
+              </p>
+            </li>
+            <li id="1" class="hidden">
+              <div class="card">
+                <div class="animated-card">
+                  <div class="tools-alt">
+                    <span style="background-color: #0277bd">CSS</span>
+                    <span style="background-color: #e14e1d">HTML</span>
+                    <span style="background-color: #d8c232">JS</span>
+                  </div>
+                  <img src="assets/projects-assets/project01-art.png" alt="" />
+                </div>
+                <div class="info">
+                  <div class="links">
+                    <a
+                      href="https://github.com/emanuelhenrique-dev/Blizzard_br-challenges"
+                      target="_blank"
+                    >
+                      Github
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.68152 3.66718L8.36902 8.35468L3.68152 13.0422"
+                          stroke="#FFEFEF"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8.36902 3.66718L13.0565 8.35468L8.36902 13.0422"
+                          stroke="#FFEFEF"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="http://blizzard-br-challenges-omega.vercel.app/"
+                      target="_blank"
+                    >
+                      Demo
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.68152 3.66718L8.36902 8.35468L3.68152 13.0422"
+                          stroke="#FFEFEF"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8.36902 3.66718L13.0565 8.35468L8.36902 13.0422"
+                          stroke="#FFEFEF"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="tools">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                    <span>Figma</span>
+                  </div>
+                </div>
+              </div>
+              <h3>Landing page Blizzard</h3>
+              <p>
+                Projeto feito para o desafio da BrChallenges de criar uma
+                landing page da blizzard na dificuldade difícil.
+              </p>
+            </li>
+            <li id="2" class="hidden">
+              <div class="card">
+                <div class="animated-card">
+                  <div class="tools-alt">
+                    <span style="background-color: #0277bd">CSS</span>
+                    <span style="background-color: #e14e1d">HTML</span>
+                    <span style="background-color: #d8c232">JS</span>
+                  </div>
+                  <img src="assets/projects-assets/project01-art.png" alt="" />
+                </div>
+                <div class="info">
+                  <div class="links">
+                    <a
+                      href="https://github.com/emanuelhenrique-dev/Blizzard_br-challenges"
+                      target="_blank"
+                    >
+                      Github
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.68152 3.66718L8.36902 8.35468L3.68152 13.0422"
+                          stroke="#FFEFEF"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8.36902 3.66718L13.0565 8.35468L8.36902 13.0422"
+                          stroke="#FFEFEF"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="http://blizzard-br-challenges-omega.vercel.app/"
+                      target="_blank"
+                    >
+                      Demo
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.68152 3.66718L8.36902 8.35468L3.68152 13.0422"
+                          stroke="#FFEFEF"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8.36902 3.66718L13.0565 8.35468L8.36902 13.0422"
+                          stroke="#FFEFEF"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="tools">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                    <span>Figma</span>
+                  </div>
+                </div>
+              </div>
+              <h3>Landing page Blizzard</h3>
+              <p>
+                Projeto feito para o desafio da BrChallenges de criar uma
+                landing page da blizzard na dificuldade difícil.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="wrapper">
+          <p>@2023, Feito por Emanuel</p>
+          <p>emanuelhenriquefs@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
