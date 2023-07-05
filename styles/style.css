@@ -486,18 +486,6 @@ nav .menu li:hover span.cursor {
   background-color: rgba(13, 13, 13, 0.5);
 }
 
-#skills .list-skill li::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  top: 1rem;
-  right: -10px;
-  background-color: rgba(13, 13, 13, 0.9);
-  filter: blur(15px);
-  padding-inline: 10px;
-}
 
 #skills .list-skill li h3 {
   color: #FFF;
