@@ -700,7 +700,7 @@ nav .menu li:hover span.cursor {
   }
 
   #projects .list-projects li.hidden .card .animated-card {
-    background-color: rgba(245, 138, 44, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 50%;
   }
 
