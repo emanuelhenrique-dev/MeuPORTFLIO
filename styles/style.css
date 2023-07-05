@@ -466,7 +466,7 @@ nav .menu li:hover span.cursor {
 }
 
 #skills .list-skill {
-  padding-top: 7rem;
+  padding-top: 3rem;
   display: flex;
   gap: 10px 30px;
   flex-wrap: wrap;
