@@ -38,15 +38,34 @@ projectList.addEventListener('click', (e) => {
   if (projectCard.tagName == 'LI') {
     projectCard.classList.remove('hidden');
 
-    for (let i = 0; i < projectCards.length; i++) {
+    for (let i = 0; i < projectCards.length - 1; i++) {
       if (projectCards[i].id !== projectCard.id) {
         projectCards[i].classList.add('hidden');
       }
     }
   } else if (projectCard.tagName == 'UL') {
     //clicar fora
-    for (let i = 0; i < projectCards.length; i++) {
+    for (let i = 0; i < projectCards.length - 1; i++) {
       projectCards[i].classList.add('hidden');
     }
+  }
+});
+
+const copyEmail = document.querySelector('#about .copy-email');
+const warning = document.querySelector('#about .copy-email .copy-warning');
+const email = 'emanuelhenriquefs@gmail.com';
+copyEmail.addEventListener('click', () => {
+  console.log('email copiado');
+  navigator.clipboard.writeText(email);
+
+  if (warning.className == 'copy-warning') {
+    warning.classList.add('active');
+  }
+
+  if (warning.className == 'copy-warning active') {
+    const myInterval = setInterval(() => {
+      warning.classList.remove('active');
+      clearInterval(myInterval);
+    }, 3000);
   }
 });
