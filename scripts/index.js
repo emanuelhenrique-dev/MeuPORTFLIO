@@ -69,3 +69,15 @@ copyEmail.addEventListener('click', () => {
     }, 3000);
   }
 });
+
+window.addEventListener('load', () => {
+  var sBrowser,
+    sUsrAg = navigator.userAgent;
+  if (sUsrAg.indexOf('Firefox') > -1) {
+    sBrowser = 'Mozilla Firefox';
+    console.log(sBrowser);
+    document.body.classList.add('firefox');
+  }
+});
+
+//alert('Você está utilizando: ' + sBrowser);

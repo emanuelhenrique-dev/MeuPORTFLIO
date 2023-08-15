@@ -175,9 +175,15 @@ nav .menu li:hover span.cursor {
   url(/assets/Home-background.png);
 }
 
+#home .wrapper {
+  display: flex;
+  align-items: center;  
+}
+
 
 #home .textinitial {
   display: flex;
+  flex: 3;
   align-items: start;
   justify-content: center;
   flex-direction: column;
@@ -281,6 +287,138 @@ nav .menu li:hover span.cursor {
 /*#home .textinitial .buttons a:hover img {
   filter: brightness(0) saturate(100%) invert(75%) sepia(44%) saturate(5091%) hue-rotate(341deg) brightness(100%) contrast(93%);
 } */
+
+
+
+/* ---------Animacao baloes inicio ------*/
+#home .animation {
+  position: relative;
+}
+
+#home .animation div{
+  position: absolute;
+  animation: float 4s linear infinite alternate;
+}
+
+#home .animation div img {
+  z-index: 10;
+}
+
+@keyframes float {
+  0%   {
+    transform: translate(0px)
+   }
+  100% {
+    transform: translateY(24px)
+  }
+}
+
+
+#home .animation .ballon1 {
+  top: -142px;
+  left: -129px;
+  --color1:hsl(26, 32%, 24%);
+  --color2: hsl(36, 63%, 32%);
+  --color3: hsl(35, 66%, 52%);
+}
+
+#home .animation .ballon2 {
+  top: 63px;
+  left: -326px;
+  animation-delay: 1s;
+  --color1:hsl(26, 32%, 24%);
+  --color2: hsl(35, 44%, 27%);
+  --color3: hsl(35, 44%, 27%);
+}
+
+#home .animation .ballon3 {
+  top: -98px;
+  left: -491px;
+  animation-delay: 1.4s;
+  --color1:hsl(212, 32%, 24%);
+  --color2: hsl(231, 43%, 27%);
+  --color3: hsl(218, 52%, 30%);
+}
+
+#home .animation .ballon4 {
+  top: 131px;
+  left: -145px;
+  animation-delay: 1.8s;
+  --color1:hsl(26, 32%, 24%);
+  --color2: hsl(35, 44%, 27%);
+  --color3: hsl(35, 44%, 27%);
+}
+
+#home .animation .ballon5 {
+  top: -57px;
+  left: -269px;
+  animation-delay: 2s;
+  --color1:hsl(26, 32%, 24%);
+  --color2: hsl(35, 44%, 27%);
+  --color3: hsl(35, 44%, 27%);
+}
+
+#home .animation .ballon6 {
+  top: 34px;
+  left: -31px;
+  animation-delay: 2.4s;
+  --color1:hsl(26, 32%, 24%);
+  --color2: hsl(35, 44%, 27%);
+  --color3: hsl(35, 44%, 27%);
+}
+
+#home .animation .ballon7 {
+  top: 174px;
+  left: -442px;
+  animation-delay: 2.8s;
+  --color1:hsl(26, 32%, 24%);
+  --color2: hsl(35, 44%, 27%);
+  --color3: hsl(35, 44%, 27%);
+}
+
+/* Animacao baloes luz */
+
+#home .animation div .light {
+  position: absolute;
+  bottom: -1%;
+  left: 5%;
+  right: 0;
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  background: var(--color1);
+  animation: light 2s linear infinite alternate;
+  filter: blur(20px);
+  z-index: -1;
+  
+} 
+#home .animation div .light::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    padding-bottom: 110%;
+    border-radius: 50%;
+    background: var(--color2);
+  }
+  #home .animation div .light::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 12.5%;
+    width: 75%;
+    padding-bottom: 90%;
+    border-radius: 50%;
+    background: var(--color3);
+  }
+
+  @keyframes light {
+    0%   {opacity: 1; transform: translate(0px) translateX(0)scale(1)}
+    100% {opacity: .6; transform: translateY(-2px) translateX(-2px) scaleX(.9) scaleY(.9)}
+  }
+/* ---------Animacao baloes FIm ------*/
 
 /* --------------------------about ----------------------------*/
 
@@ -847,7 +985,14 @@ nav .menu li:hover span.cursor {
   opacity: 0.6;
 }
 
+@media (max-width: 1300px) {
 
+  #home .animation {
+    left: 20px;
+    transform: scale(0.7);
+  }
+
+}
 
   /* -------------------------------------------------------- 1100px ----------------------------*/
 @media (max-width: 1100px) {
@@ -989,6 +1134,10 @@ nav .menu.active {
   }
 }
 
+#home .animation {
+  display: none;
+}
+
 
 /* --------------------------about ----------------------------*/
 
@@ -1043,7 +1192,7 @@ nav .menu.active {
 /* --------------------------skills ----------------------------*/
 
 #skills {
-  background-position-x: -320px;
+  background-position-x: 30%;
   background-position-y: center;
   background-size: cover;
 }
@@ -1291,3 +1440,39 @@ nav .menu.active {
 } 
 
 }
+
+
+/*       scrollbar personalizada   */
+body.firefox {
+  overflow-y: scroll;
+  scrollbar-color: var(--primary-color) #2e2e2e;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  overflow: overlay;
+  scroll-padding-top: var(--nav-height);
+}
+
+.section::-webkit-scrollbar,
+::-webkit-scrollbar {
+  width: 0.6em;
+  height: 1em;
+  -webkit-appearance: none;
+ 
+}
+
+::-webkit-scrollbar {
+  background: #2e2e2e;
+  border-radius: 100vw;
+  margin-block: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border: 0.25em solid hls(259 46% 61%/1);
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #eaa364;
+}
+
+
