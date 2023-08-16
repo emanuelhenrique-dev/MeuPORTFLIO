@@ -70,6 +70,7 @@ copyEmail.addEventListener('click', () => {
   }
 });
 
+//detectar se o navegador é firefox
 window.addEventListener('load', () => {
   var sBrowser,
     sUsrAg = navigator.userAgent;
@@ -80,4 +81,19 @@ window.addEventListener('load', () => {
   }
 });
 
-//alert('Você está utilizando: ' + sBrowser);
+ScrollReveal({
+  origin: 'bottom',
+  distance: '30px',
+  duration: 2400
+}).reveal(`  
+#skills .wrapper, 
+`);
+
+ScrollReveal({
+  origin: 'bottom',
+  distance: '130px',
+  duration: 2000,
+  delay: 200
+}).reveal(
+  '#home .animation,#about .wrapper img, #skills .wrapper, #projects .wrapper ul'
+);
